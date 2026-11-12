@@ -1,5 +1,7 @@
 package com.example.roomdatabase.uicontroller
 
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.ArrowBack
 import androidx.compose.material3.CenterAlignedTopAppBar
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.Icon
@@ -10,8 +12,14 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
 import androidx.navigation.NavHostController
+import androidx.navigation.compose.NavHost
+import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import com.example.roomdatabase.R
+import com.example.roomdatabase.view.DestinasiEntry
+import com.example.roomdatabase.view.DestinasiHome
+import com.example.roomdatabase.view.EntrySiswaScreen
+import com.example.roomdatabase.view.HomeScreen
 
 @Composable
 fun SiswaApp(navController: NavHostController = rememberNavController()){
@@ -47,7 +55,7 @@ fun HostNavigasi(
     navController: NavHostController,
     modifier: Modifier = Modifier
 ){
-    androidx.navigation.NavHost(
+    NavHost(
         navController = navController,
         startDestination = DestinasiHome.route,
         modifier = Modifier
