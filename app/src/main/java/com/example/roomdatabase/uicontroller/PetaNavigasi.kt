@@ -10,7 +10,13 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
 import androidx.navigation.NavHostController
+import androidx.navigation.compose.rememberNavController
 import com.example.roomdatabase.R
+
+@Composable
+fun SiswaApp(navController: NavHostController = rememberNavController()){
+    HostNavigasi(navController = navController)
+}
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
