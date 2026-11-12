@@ -11,6 +11,7 @@ composeBom = "2026.02.01"
 room = "2.8.4"
 kspver = "2.0.21-1.0.26"
 room3Common = "3.0.3"
+constraintlayout = "2.2.2"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -36,6 +37,7 @@ lifecycle-viewmodel-compose = { module = "androidx.lifecycle:lifecycle-viewmodel
 lifecycle-runtime-compose = { module = "androidx.lifecycle:lifecycle-runtime-compose", version = "2.10.0" }
 navigation-compose = { module = "androidx.navigation:navigation-compose", version = "2.9.6" }
 androidx-room3-common = { group = "androidx.room3", name = "room3-common", version.ref = "room3Common" }
+androidx-constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
