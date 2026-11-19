@@ -2,6 +2,7 @@ package com.example.roomdatabase.room
 
 import androidx.room.Entity
 import androidx.room.PrimaryKey
+import com.example.roomdatabase.viewmodel.UIStateSiswa
 
 @Entity(tableName = "tblsiswa")
 data class Siswa(
@@ -10,4 +11,6 @@ data class Siswa(
     val nama: String,
     val alamat: String,
     val telpon: String
-)
+) {
+    fun toUIStateSiswa(bool: Boolean) {}
+}
